@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+    <div> 
+        <h1>Informações dos Times Cadastrados</h1>
+        <br>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                <th>Ações</th>
+            </tr>
+            {% for time in times %}
+            <tr>
+                <td>{{ time.nome }}</td>
+                <td>{{ time.cidade }}</td>
+                <td>{{ time.estado }}</td>
+                <td>
+                    <a href="{{ url_for('editar', id=time['id']) }}">(Editar)</a>
+                    <form action="{{ url_for('excluir', id=time['id']) }}" method="post" style="display: inline-block;">
+                        <input type="submit" value="Excluir" onclick="return confirm('Tem certeza que deseja excluir este time?')">
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+        <h2><a href="/cadastrar">Cadastrar Novo Time </a></h2>
+        <br>
+    </div>
+
+{% endblock %}

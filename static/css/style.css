@@ -1,0 +1,158 @@
+/* styles.css */
+body {
+    background-color: #016a72;
+}
+
+h1 {
+    color: #020c36;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.texto {
+    font-size: 25px;
+}
+
+header {
+    max-width: 600px;
+    margin: auto;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu p {
+    margin: 0 10px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 600px;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: #17b9bede;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #020202;
+    border-radius: 4px;
+    background-color: #a0a0a0;
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #020c36;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+footer {
+    max-width: 620px;
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+/* Tabela / Listar */
+table {
+    max-width: 650px;
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #17b9bede;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d1d1d1;
+}
+
+h2 {
+    max-width: 260px;
+    margin: auto;
+    color: #000000;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #af8204;
+}
+h2:hover{
+    background-color: #020c36;
+}

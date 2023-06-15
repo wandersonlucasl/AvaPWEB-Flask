@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <div class="container">
+        <h1>Cadastre seu Time</h1>
+            <form action="{{ url_for('cadastrar') }}" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required><br><br>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required><br><br>
+                <input type="submit" value="Cadastrar">
+            </form>
+    </div>
+{% endblock %}
