@@ -3,7 +3,7 @@
 
 {% block conteudo %}
 
-    <div> 
+    <div>
         <h1>Informações dos Times Cadastrados</h1>
         <br>
         <table border="1">
@@ -11,6 +11,7 @@
                 <th>Nome</th>
                 <th>Cidade</th>
                 <th>Estado</th>
+                <th>Editar Time</th>
                 <th>Ações</th>
             </tr>
             {% for time in times %}
@@ -18,10 +19,10 @@
                 <td>{{ time.nome }}</td>
                 <td>{{ time.cidade }}</td>
                 <td>{{ time.estado }}</td>
+                <td><a href="{{ url_for('editar', id=time['id']) }}"> Editar </a></td>
                 <td>
-                    <a href="{{ url_for('editar', id=time['id']) }}">(Editar)</a>
-                    <form action="{{ url_for('excluir', id=time['id']) }}" method="post" style="display: inline-block;">
-                        <input type="submit" value="Excluir" onclick="return confirm('Tem certeza que deseja excluir este time?')">
+                    <form action="{{ url_for('excluir', id=time['id']) }}" method="post">
+                        <input type="submit" value="Excluir">
                     </form>
                 </td>
             </tr>
